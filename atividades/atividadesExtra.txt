@@ -1,0 +1,163 @@
+                         ALGORÍTIMO
+
+1) 
+    let numeroMes = +prompt("diite o numero de meses")
+    let calculo = numeroMes * 30
+    console.log(` o total de dias é ${calculo}`)
+---------------------------------------------------------------------------
+
+2)
+    let preco = +prompt("digite o valor do produto")
+    let desconto = +prompt("digite o desconto")
+    let calculo = preco * (desconto / 100)
+    let calculo2 = 
+    console.log(`o valor final é:${calculo.toFixed(2)}`)
+****errado****
+----------------------------------------------------------------------------
+
+                        IF
+1) 
+    let numero = +prompt("Digite o valor")
+
+    if (numero % 2 === 0) {
+        console.log("O número é par")
+    } else {
+        console.log("O número é ímpar")
+    }
+
+-------------------------------------------------------------------------------
+
+2)
+let salario = +prompt("Digite o valor do seu salário")
+        let prestacao = +prompt("Digite o valor da prestação")
+        let conta = 0.2 * salario
+            if (conta < prestacao) {
+                console.log("empréstimo não concedido")
+            }
+            else {
+                console.log("empréstimo concedido")
+            }
+
+
+----------------------------------------------------------------------------
+
+3)
+        let ladoA = +prompt("Digite o lado A")
+        let ladoB = +prompt("Digite o lado B")
+        let ladoC = +prompt("Digite o lado C")
+            if (ladoA && ladoB && ladoC){
+                console.log("O triangulo é equilátero\n Ele possui os 3 lados iguais.")
+            } else if (ladoA == ladoB || ladoC){
+                console.log("− Triângulo	Isósceles: possui 2	lados iguais")
+            }
+                    else{
+                        console.log("Triângulo	Escaleno: possui 3 lados diferentes.")
+                    }
+                    ****errado?
+
+------------------------------------------------------------------------------------ 
+                          LOOPS
+1) 
+    for(let i = 0;i < 1;i++) {
+        let soma1 = Number(prompt("Digite um número1"))
+        let soma2 = Number(prompt("Digite um número2"))
+        let soma3 = Number(prompt("Digite um número3"))
+        let soma4 = Number(prompt("Digite um número4"))
+        let soma5 = Number(prompt("Digite um número5"))
+         let somaTotal= soma1+soma2+soma3+soma4+soma5
+        let media = somaTotal / 5
+        console.log(`Soma: ${soma1} + ${soma2} + ${soma3} + ${soma4} + ${soma5} = ${somaTotal.toFixed(2)}\nMédia: ${media.toFixed(2)}`)
+
+-------------------------------------------------------------------------------------------
+                               MATRIZES
+
+1) 
+    let matriz = []
+
+    for (let i = 0; i < 3; i++) {
+        matriz[i] = []
+        for (let j = 0; j < 3; j++) {
+            matriz[i][j] = prompt(`Digite o valor da ${i + 1}a linha na ${j + 1} coluna`)
+        }
+    }
+      let mostrarMatriz = ""
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            mostrarMatriz += matriz[i][j] + "\t"
+        }
+        mostrarMatriz += "\n"
+    }
+
+    console.log(mostrarMatriz)
+
+    let X = prompt("Digite um valor a ser encontrado")                
+    let linha, coluna
+
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            if (matriz[i][j] === X) {
+                linha = i
+                coluna = j
+                break
+            }
+        }
+    }            
+
+    linha ? 
+        console.log(`Valor encontrado na posição: [${linha}][${coluna}]`) 
+    : 
+        console.log("Valor não encontrado")            
+
+
+----------------------------------------------------------------------------------
+
+2)
+     let matriz = []
+        for (let i = 0; i < 5; i++) {
+        matriz[i] = []
+            for (let j = 0; j < 5; j++) {
+            matriz[i][j] = []    
+                
+    if (i == j) {
+        matriz[i][j] = 1
+    }
+        else {matriz[i][j] = 0}
+    }
+    }
+    console.log(matriz)
+
+------------------------------------------------------------------------------------------------
+                           SWICTH
+ 
+1)
+let valor = +prompt("Digite o dia da semana correspondente a um numero da semana\nIsto é, domingo se for 1, segunda-feira se for 2, e assim por diante.")
+            switch (valor) {
+                case 1:
+                    alert("Domingo")
+                    break
+                case 2:
+                    alert("Segunda")
+                    break
+                case 3: 
+                    alert("Terça")
+                    break
+                case 4:
+                    alert("Quarta")
+                    break
+                case 5:
+                    alert("Quinta")
+                    break
+                case 6: 
+                    alert("Sexta")
+                    break
+                case 7: 
+                    alert("Sábado")
+                    break
+                default:
+                    alert("Opção inválida")  
+
+-----------------------------------------------------------------------------------------------------
+        
+
+
+            

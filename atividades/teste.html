@@ -8,19 +8,21 @@
 <body>
     <script>
 
-let numero1 = +prompt("numero")
-let numero2 = +prompt("numero")       
-function subtracao(numero1, numero2) {
-console.log(`Numero1:${numero1}\nNumero2: ${numero2}`)
-let resultado = numero1 - numero2
-alert(resultado)
-}
-console.log(`${resultado}`)
+let tamanhoMaximo = " ",
 
+        let nome = prompt("digite")
+        function truncar(string, tamanhoMaximo){
+
+            if (nome > tamanhoMaximo){
+                console.log("errado")
+            }
+        }
 
     </script>
 </body>
 </html>
 
-
- 
+3) Escreva uma função truncar(string, tamanhoMaximo) que checa o tamanho de um string e se ela
+excede o tamanhoMaximo substitui o final da string com "..."
+Exemplo:
+truncar("teste teste teste teste", 10) -> "teste test..."

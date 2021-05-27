@@ -1,0 +1,25 @@
+
+            1) Crie uma função lerNumero() que vai pedir um número até que
+            o usuário informe um valor númerico. 
+
+
+            2) Crie uma função que vai gerar um valor aleatório com base
+            nos limites minimo e máximo passados como parâmetro.
+            random(minimo, maximo)
+--------------------------------------------------------------------------------------------------------------
+
+            let palavras = prompt("digite")
+        function checaSpam(palavras){
+            if (palavras.includes("jequiti")) {
+                return console.log(true)
+            }
+            else if (palavras.includes("day trading")){
+                return console.log(true)
+            }
+            else {
+                return console.log("as palavras nao aparecem")
+            }
+        }
+        checaSpam(palavras)
+
+----------------------------------------------------------------------------------------------------------------        

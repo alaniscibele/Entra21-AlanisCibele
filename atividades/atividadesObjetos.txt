@@ -1,0 +1,16 @@
+1-   
+    let objeto = {
+            
+        }
+        function estaVazio(objeto) {
+                for(let propriedade in objeto) {
+                    if(objeto.hasOwnProperty(propriedade))
+                        return false;
+            }
+            return true;
+        }
+        console.log(estaVazio(objeto))
+
+--------------------------------------------------------------------------------------------------------
+
+2-

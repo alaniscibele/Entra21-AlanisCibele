@@ -8,21 +8,33 @@
 <body>
     <script>
 
-let tamanhoMaximo = " ",
-
-        let nome = prompt("digite")
-        function truncar(string, tamanhoMaximo){
-
-            if (nome > tamanhoMaximo){
-                console.log("errado")
-            }
+function pedirNotaAluno (){
+         let matricula = +prompt("Digite o número da sua matricula")
+         for (let i of lista){
+             if (matricula == i [0]) {
+                 let notas = []
+                     for (let i = 0; i < 3; i++) {
+                     notas[i] = +prompt("Digite suas notas")
+                     }
+                cadastrarNotas(notas, matricula)
+                return efetuarMedia(notas,matricula)
+             }
+         }
+          alert("Não foi possivel encontrar a matrícula")
         }
+          
+         function cadastrarNotas (notas, matricula){
+             for ( let i of lista){
+                 if (matricula == i [0]) {
+                     i[2] = notas[0]
+                     i[3] = notas[1]
+                     i[4] = notas[2]
+
+                 }
+             }
+         }
+    
 
     </script>
 </body>
 </html>
-
-3) Escreva uma função truncar(string, tamanhoMaximo) que checa o tamanho de um string e se ela
-excede o tamanhoMaximo substitui o final da string com "..."
-Exemplo:
-truncar("teste teste teste teste", 10) -> "teste test..."

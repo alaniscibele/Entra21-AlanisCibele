@@ -1,0 +1,25 @@
+<p><strong>Algumas marcas</strong></p>
+    <p><em>Este paragrafo está em itálico</em></p>
+    <p><ins>paragrafo sublinhado...</ins></p>
+    <p><text-transform: uppercase> Ultilizando a marca big <small>ultilizando a marca small</small></p>  
+    <p>mais uma marca que permite expressoes do genero x<sub>²</sub> e x<sup>²</sup></p>  
+    <h3>exemplos de caracteres especiais: <br> á à õ ê ã </h3>
+
+
+-----------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio1.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 class="">Fontes:</h1>
+    <br>
+    <p class="texto-verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eligendi doloribus, est commodi quia inventore omnis dolorem, quos officia libero eveniet a tempore. <br> Repellendus doloribus numquam laborum autem eos veniam harum.</p>
+    <p class="texto-vermelho">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sed, vel voluptas quia odit rem repudiandae et, soluta nihil enim inventore deserunt debitis. Libero, magnam blanditiis! Provident eos ullam quae?</p>
+    <p class="texto-azul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad culpa enim odio omnis nostrum fugit tempore id ratione assumenda minus tempora necessitatibus excepturi natus, repellat veritatis incidunt quod animi cum.</p>

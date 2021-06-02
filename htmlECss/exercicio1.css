@@ -9,18 +9,19 @@
 }
 
 body {
-    background-color: grey;
+    background-color: white;
 }
 
 .textoazul{
     color: blue;
 }
 
-img {
-    max-width: 150%;
-    height: auto;    
-    border-width: 4px;
-    border-style: solid;
-    border-color: darkslategrey;
-    margin-right: 50px;
+
+
+.lorem{
+    color: lightyellow;
+}
+
+.texto-lorem{
+    color: lightsteelblue
 }

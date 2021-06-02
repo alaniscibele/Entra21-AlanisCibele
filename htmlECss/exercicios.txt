@@ -1,3 +1,5 @@
+2- PARTE HTML
+
 <p><strong>Algumas marcas</strong></p>
     <p><em>Este paragrafo está em itálico</em></p>
     <p><ins>paragrafo sublinhado...</ins></p>
@@ -7,7 +9,7 @@
 
 
 -----------------------------------------------------------------------
-
+3- PARTE HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,3 +25,122 @@
     <p class="texto-verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Eligendi doloribus, est commodi quia inventore omnis dolorem, quos officia libero eveniet a tempore. <br> Repellendus doloribus numquam laborum autem eos veniam harum.</p>
     <p class="texto-vermelho">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sed, vel voluptas quia odit rem repudiandae et, soluta nihil enim inventore deserunt debitis. Libero, magnam blanditiis! Provident eos ullam quae?</p>
     <p class="texto-azul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad culpa enim odio omnis nostrum fugit tempore id ratione assumenda minus tempora necessitatibus excepturi natus, repellat veritatis incidunt quod animi cum.</p>
+
+</body>
+</html>
+
+3- PARTE CSS
+
+.texto-verde{
+    color: green;
+}
+.texto-vermelho{
+    color: red;
+}
+.texto-azul{
+    color: blue;
+}
+
+body {
+    background-color: grey;
+}
+
+--------------------------------------------------------------------------------------------
+4- PARTE HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercicio1.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <hr>
+   <center class="textoazul"><h1>A CONTRUÇÃO</h1></center>
+    <hr>
+    <center><img src="Capturar6.PNG" alt="estatua"></center>
+    <br>
+    <center><p>Eles ergueram a torre de Babel <br>
+        para escalar o Céu. <br>
+        Mas Deus não estava lá! <br>
+        Estava ali mesmo, entre eles, <br>
+        ajudando a construir a torre.</p></center>
+        <center><em><strong>Mário Quintana</strong> </em></center>
+        <hr>
+
+</body>
+</html>
+
+4- PARTE CSS
+body {
+    background-color: grey;
+}
+
+.textoazul{
+    color: blue;
+}
+
+img {
+    max-width: 150%;
+    height: auto;    
+    border-width: 4px;
+    border-style: solid;
+    border-color: darkslategrey;
+    margin-right: 50px;
+}
+------------------------------------------------------------------------------------------------------
+1-
+ <dt><center><strong><h1>Café Starbuzz</strong></center></dt></h1>
+    <dl>
+        <strong><dt>Mistura de casa: R$1,49</dt></strong><br>
+        <br>
+        <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis delectus nisi cupiditate natus hic fugiat quo quae sint quam repudiandae sequi eaque eveniet explicabo id laboriosam soluta optio, ex deserunt.</dd><br>
+        <br>
+        <strong><dt>Café arabico com leite: R$2,35</dt></strong><br>
+        <br>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum sint nostrum nemo necessitatibus eius veritatis et! Hic perferendis repellendus odit veritatis quidem id corporis deserunt illo. Aliquid, ipsam optio?</dd><br>
+        <br>
+        <strong><dt>Cappucino: R$1,89</dt></strong><br>
+        <br>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid voluptates molestias dolorum repellat, quae officia blanditiis. Vero vel, enim dicta tempore, ad similique praesentium libero laboriosam sunt architecto eaque.</dd><br>
+        <br>
+        <strong><dt>Chá Chai: R$1,85</dt></strong><br>
+        <br>
+        <dt>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, nostrum eius. Saepe unde ipsam officiis aperiam voluptatum, consequatur aliquam laborum cumque obcaecati totam impedit quas tenetur inventore quos harum quasi.</dt><br>
+
+        </dd>
+    </dl>
+
+ --------------------------------------------------------------------------------------------------------------------  
+ 4- HTML
+ <h4 class="lorem">Lorem Ipson</h4><br><br><br><br><br>
+   <img src="Capturar9.PNG" alt="estatua">
+<p class="texto-lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Temporibus nulla assumenda nemo perspiciatis ad quas itaque dicta molestiae dolor, rerum sed eius. <br> Neque dolores consequatur nisi repellendus ea, dolorum ab?</p>
+    <h4>fonte: </h4>
+
+4- CSS
+
+    body {
+    background-color: #40404a;
+}
+
+.textoazul{
+    color: blue;
+}
+
+
+
+.lorem{
+    color: lightyellow;
+}
+
+.texto-lorem{
+    color: lightsteelblue
+}
+
+-------------------------------------------------------------------------------------------
+
+5-

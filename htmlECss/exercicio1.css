@@ -1,27 +1,42 @@
-.texto-verde{
-    color: green;
-}
-.texto-vermelho{
-    color: red;
-}
-.texto-azul{
-    color: blue;
-}
-
-body {
-    background-color: white;
-}
-
-.textoazul{
-    color: blue;
-}
 
 
-
-.lorem{
-    color: lightyellow;
+.titulo{
+    font-family: 'Source Code Pro', monospace;
 }
 
-.texto-lorem{
-    color: lightsteelblue
+.logoPg {
+    max-width:150px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }
+
+body {background-color: #f48474;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+.texto {
+    font-size:20px;
+}
+
+.nav {
+    font-size:20px;
+}
+
+.fundo{
+    background: white;
+        width: 500px;
+        height: auto;
+        border-radius: 50px
+}
+    .fotoCelular {
+        border-radius: 150px
+    }

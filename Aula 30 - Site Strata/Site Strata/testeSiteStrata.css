@@ -1,0 +1,57 @@
+
+body{
+    color: gray
+}
+
+header{
+    text-align: center;
+    align-items: center;
+}
+
+.texto{
+    text-align: left;
+}
+
+h2{
+    text-align: left;
+}
+
+.icon{
+    border-radius: 50%;
+}
+
+.cardfoto{
+    border-radius: 25%
+}
+
+body{
+    background-image: url("imagens/fotoFundo.jpg");
+}
+
+.icon{
+    border-radius: 50%;
+}
+
+.foto1{
+    border-radius: 3%
+}
+
+.foto2{
+    border-radius: 3%
+}
+
+.foto3{
+    border-radius: 3%
+}
+
+.foto4{
+    border-radius: 3%
+}
+
+.foto5{
+    border-radius: 3%
+}
+
+.foto6{
+    border-radius: 3%
+}

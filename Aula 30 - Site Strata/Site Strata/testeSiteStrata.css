@@ -1,11 +1,28 @@
 
+@import"(fontawesome-all.min.css)";
+@import'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+
+
+    p.texto{font-family: Source Sans Pro, Helvetica, sans-serif";
+    }
+
+
+
 body{
     color: gray
 }
 
-header{
+#header{
+    
+    background-position: center;
     text-align: center;
     align-items: center;
+    background-image: url(imagens/fotoFundo.jpg);
+    padding: 72px 24px;
+    background-position: center center;
+    background-size: cover;
+    font-size: 1.35em;
+    
 }
 
 .texto{
@@ -17,15 +34,15 @@ h2{
 }
 
 .icon{
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .cardfoto{
     border-radius: 25%
 }
 
-body{
-    background-image: url("imagens/fotoFundo.jpg");
+.branco{
+    color: white;
 }
 
 .icon{
@@ -33,7 +50,8 @@ body{
 }
 
 .foto1{
-    border-radius: 3%
+    border-radius: 3%;
+    scroll-snap-align: center;
 }
 
 .foto2{
@@ -55,3 +73,56 @@ body{
 .foto6{
     border-radius: 3%
 }
+
+.botao{
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #787878 !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 3.15em;
+    height: calc(2.75em + 6px);
+    line-height: 2.75em;
+    min-width: 10em;
+    padding: 0 1.5em;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+}
+ #footer{
+    background-position: center;
+    text-align: center;
+    align-items: center;
+     background-image: url(imagens/fotoFundo.jpg);
+     bottom: auto;
+     left: auto;
+     position: relative;
+     text-align: center;
+ }
+
+ .redesocialicon{
+    display: inline-block;
+    color: gray;
+    border:4px  ;
+ }
+
+ .botao{
+    grid-row-start: 5px;
+    grid-row-end: 10px;
+ }
+
+ @media screen and (min-width: 480px){
+     .fotos{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         justify-content: space-around;
+     }
+ }
+
+ .botao1{
+     align-content: left ;
+ }
+
+ 

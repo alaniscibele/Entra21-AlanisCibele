@@ -1,5 +1,7 @@
+
 body{
-    background-color: darkred;
+    background-color: black;
+    font-family: 'Cantata One', serif;
 }
 
 ul {
@@ -16,7 +18,7 @@ ul {
   
   li a{
     display: inline-block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 10px 20px;
     margin-right: 10px;
@@ -24,6 +26,25 @@ ul {
   }
   
   li a:hover, .dropdown:hover .dropbtn {
-    background-color: darkred;
+    background-color: black;
   }
- 
+
+.slide {
+  background-image: url(img/slider.jpg);
+  animation: slider 20s alternate infinite;
+  height: 400px;
+}
+
+  @keyframes slider {
+    from {
+      background-position: center left;
+    }    
+
+    to {
+      background-position: center right;
+    }
+  }
+
+  .texto{
+    color: white;
+  }

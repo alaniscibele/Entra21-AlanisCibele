@@ -1,7 +1,8 @@
 
 body{
-    background-color: black;
-    font-family: 'Cantata One', serif;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+ 
 }
 
 ul {
@@ -18,7 +19,7 @@ ul {
   
   li a{
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 10px 20px;
     margin-right: 10px;
@@ -26,13 +27,13 @@ ul {
   }
   
   li a:hover, .dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: white;
   }
 
 .slide {
-  background-image: url(img/slider.jpg);
+  background-image: url(img/slider.png);
   animation: slider 20s alternate infinite;
-  height: 400px;
+  height: 671px;
 }
 
   @keyframes slider {
@@ -48,3 +49,26 @@ ul {
   .texto{
     color: white;
   }
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body, .footer-widgets .column, .site-info{font-family:"Mulish";}
+@media screen and (min-width: 769px){body, .footer-widgets .column, .site-info{font-size:16px;}.navbar-brand-wpz h1 a{font-size:48px;}}
+@media screen and (max-width: 768px){body, .footer-widgets .column, .site-info{font-size:16px;}.navbar-brand-wpz h1 a{font-size:40px;}}
+@media screen and (max-width: 480px){body, .footer-widgets .column, .site-info{font-size:16px;}.navbar-brand-wpz h1 a{font-size:28px;}}
+
+.has-text-align-justify{text-align:justify;}
+
+.texto{
+  color:black
+}
+
+

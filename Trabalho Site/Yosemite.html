@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Yosemite/yosemite.css">
+    <link rel="stylesheet" href="TrabalhoSite.html">
+    <link rel="stylesheet" href="roma.html">
+    <link rel="stylesheet" href="monaco.html">
+    <link rel="stylesheet" href="pittsburgh.html">
+    <link rel="stylesheet" href="deserto.html">
+<link rel="stylesheet" href="Yosemite.html">
+
+</head>
+<body>
+
+    <body>
+        <nav>
+            <span>Viagem</span>
+    
+            <div class="menu">
+                <ul>
+                  
+          <div class="dropdown">
+            <button class="dropbtn">Cidades</button>
+            <div class="dropdown-content">
+              <a href="pittsburgh.html">Pittsburgh</a>
+              <a href="mônaco.html">Monaco</a>
+              <a href="roma.html">Roma</a>
+              <a href="deserto.html">Deserto do Atacama</a>
+              <a href="Yosemite.html">Yosemite</a>
+            </div>
+          </div>
+                    <a href="#">
+                        <li>Dicas</li>
+                    </a>
+                    <a href="TrabalhoSite.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="paginaItens.html">
+                        <li>Itens Nessesários</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <main class="mainn">
+            <section class="text">
+                <h1>Yosemite</h1>
+                <span>Um vale rochoso monumental protegido pelo terceiro mais antigo parque nacional americano, lar de ursos, águias e escaladores.   O Parque Nacional Yosemite ocupa uma área que equivale a mil vezes o tamanho do Central Park e sua cadeia de montanhas é a meca dos escaladores. <br> 
+                    <br> <strong>Lugares para visitar:</strong><p>Bridalveil Fall<br> Glacier Point<br>Tunnel View<br></p>
+                </span>
+                </div>
+            </section>
+            <session>
+                <ul class="slider">
+                    <li>
+                        <input type="radio" id="slide1" name="slide" checked>
+                    <label for="slide1"></label>  
+                        <img src="Yosemite/ca1.png" class="monacoImg" id="ca1" onclick="mudarImagem(this)"/>
+                    </li>
+                    <li>
+                        <input type="radio" id="slide2" name="slide" checked>
+                    <label for="slide2"></label>  
+                        <img src="Yosemite/ca2.png" class="monacoImg" id="ca2" onclick="mudarImagem(this)"/>
+                    </li>
+                    <li>
+                        <input type="radio" id="slide3" name="slide" checked>
+                    <label for="slide3"></label>  
+                        <img src="Yosemite/ca3.png" class="monacoImg" id="ca3" onclick="mudarImagem(this)"/>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+    <script type="text/javascript">
+        lista_img = [1,2,3]
+
+            function mudarImagem(e) {
+                if (e.id == "ca1") {
+                e.src="Yosemite/ca2.png";
+                } 
+                if (e.id == "ca2"){
+                e.src="Yosemite/ca1.png";
+                } 
+                if (e.id == "ca3"){
+                e.src="Yosemite/ca3.png";
+                }
+            }
+    </script>
+</html>

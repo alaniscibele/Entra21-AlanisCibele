@@ -36,4 +36,148 @@ let data = new Date(2012, 1, 20, 3, 12, 0)
         console.log(data)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                            * switch *
 
+                
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+   <script>
+       let d = new Date()
+       let data = d.getDay()
+
+    function obtemDiaSemana(data){
+        switch(data)
+        {
+            case 0:
+            console.log("Domingo")
+            break;
+            case 1:
+            console.log("Segunda-Feira")
+            break;
+            case 2:
+            console.log("Terça-Feira")
+            break;
+            case 3:
+            console.log("Quarta-Feira")
+            break;
+            case 4:
+            console.log("Quinta-Feira")
+            break;
+            case 5:
+            console.log("Sexta-Feira")
+            break;
+            case 6:
+            console.log("Sábado")
+            break;
+        }
+    }
+    
+        console.log(obtemDiaSemana(data))
+   </script>
+</body>
+</html>
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+let data = new Date(2012, 12, 1, 03, 12, 0)
+        console.log(data)
+ 
+        let ano = data.getFullYear()
+ 
+        let mes = data.getMonth()
+ 
+        function obtemUltimoDiaMes(mes){
+            switch (mes) {
+                case 0:
+                console.log("O último dia do mês de Janeiro é 31")
+                break;
+                
+                case 1:
+                console.log("O último dia do mês de Fevereiro é 28")  
+                break;
+ 
+                case 2:
+                console.log("O último dia do mês de Março é 31")    
+                break;
+ 
+                case 3:
+                console.log("O último dia do mês de Abril é 31")
+                break;
+                
+                case 4:
+                console.log("O último dia do mês de Maio é 30")
+                break;
+                
+                case 5:
+                console.log("O último dia do mês de Junho é 30")
+                break;
+                
+                case 6:
+                console.log("O último dia do mês de Julho é 31")
+                break;
+                
+                case 7:
+                console.log("O último dia do mês de Agosto é 31")
+                break;
+                
+                case 8:
+                console.log("O último dia do mês de Setembro é 30")
+                break;
+                
+                case 9:
+                console.log("O último dia do mês de Outubro é 31")
+                break;
+                
+                case 10:
+                console.log("O último dia do mês de Novembro é 30")
+                break;
+                
+                case 11:
+                console.log("O último dia do mês de Dezembro é 31")
+                break;
+            
+            default:
+                break;
+            }
+        }
+        obtemUltimoDiaMes(mes)
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+        function obtemSegundos(){
+            
+            let data = new Date()
+            console.log(data)
+            
+            let segundos = data.getSeconds()
+            let hora = data.getHours()
+            let minutos = data.getMinutes()
+ 
+            let hora1 = hora * 3600
+            let minutos1 = minutos * 60
+ 
+            let totalSegundos = minutos1 + hora1 + segundos 
+            console.log(totalSegundos)
+        }
+        obtemSegundos()
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+         function segundosParaAmanha(){
+            let data = new Date(2012, 12, 1, 22, 00, 0)
+            console.log(data)
+            
+            let segundos = data.getSeconds()
+            let hora = data.getHours()
+            let minutos = data.getMinutes()
+
+--------------------------------------------------------------------------------------------------------------------------------------

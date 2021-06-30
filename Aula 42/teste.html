@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+   <script>
+       let d = new Date()
+       let data = d.getDay()
+
+    function obtemDiaSemana(data){
+        switch(data)
+        {
+            case 0:
+            console.log("Domingo")
+            break;
+            case 1:
+            console.log("Segunda-Feira")
+            break;
+            case 2:
+            console.log("Terça-Feira")
+            break;
+            case 3:
+            console.log("Quarta-Feira")
+            break;
+            case 4:
+            console.log("Quinta-Feira")
+            break;
+            case 5:
+            console.log("Sexta-Feira")
+            break;
+            case 6:
+            console.log("Sábado")
+            break;
+        }
+    }
+
+    console.log(obtemDiaSemana(data))
+   </script>
+</body>
+</html>
+

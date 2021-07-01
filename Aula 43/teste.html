@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <textarea id="texto"></textarea>
+
+<script>
+
+    
+        let texto = document.querySelector("#texto")        
+
+        if (!localStorage.getItem("#texto")) {            
+            armazenarTexto()
+        } else {
+            modificarTexto()
+        }
+
+        function  armazenarTexto() {
+            localStorage.setItem("#texto", texto.value)
+
+            modificarTexto()
+        }
+
+        function modificarTexto() {
+               let textoAtual = localStorage.getItem("#texto")
+            texto.value = textoAtual
+        }
+        
+        texto.onchange = armazenarTexto
+   
+
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      dobrarEm5Segundos(prompt("digite um numero"), callback)
+        function dobrarEm5Segundos(numero, cb){
+            setTimeout(() => {
+                if (isNaN(numero)==true){
+                    let erro = new Error ("o numero é invalido")
+                    return cb(erro)
+                }
+                let dobro = parseFloat(numero) * 2
+                cb(null, dobro)
+            }, 5000)
+        }
+        function callback(error, result){
+            if (error){
+                return console.log(`A operação falhou! ${error.message}`)
+            }
+            return console.log(`A operação foi bem sucedida! O resultado é ${result}`)
+        }
+
+
+        // PROMISE
+
+       dobrarEm5Segundos(prompt("digite um numero"))
+        function dobrarEm5Segundos(numero){
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                if (isNaN(numero)==true){
+                    let erro = new Error ("o numero é invalido")
+                    .catch((error) => {
+                console.log(`A operação falhou! ${error.message}`);
+            });
+  
+                }
+                let dobro = parseFloat(numero) * 2
+                .then((n) => {
+                    console.log(`A operação foi bem sucedida! O resultado é ${result}`);
+            });
+            }, 5000)
+        } 
+
+           
+
+
+    </script>
+  </body>
+</html>

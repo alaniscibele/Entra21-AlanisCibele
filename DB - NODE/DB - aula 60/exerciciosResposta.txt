@@ -1,0 +1,167 @@
+
+
+1- const format = require("pg-format");
+const db = require("./db");
+ 
+(async () => {
+    try{
+        const res = await db.query("SELECT NOW()")
+        console.log(res.rows)
+    } catch (error){
+        console.log(error.message)
+    }
+    finally{
+        db.end();
+    }
+})();
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+2- const db = require("./db");
+const format = require("pg-format");
+(async () => {
+    try {
+        await db.query(`
+    CREATE TABLE IF NOT EXISTS clientes (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        nome text NOT NULL,
+        email text NOT NULL UNIQUE,
+        telefone text NOT NULL UNIQUE,
+        numero_documento text NOT NULL UNIQUE,
+        tipo_pessoa text NOT NULL,
+        pontos integer NOT NULL
+    );
+    CREATE TABLE IF NOT EXISTS enderecos (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        rua text NOT NULL,
+        numero integer NOT NULL,
+        cidade text NOT NULL,
+        estado text NOT NULL,
+        cep text NOT NULL,
+        id_cliente uuid NOT NULL REFERENCES clientes
+    );
+     CREATE TABLE IF NOT EXISTS editoras (
+        id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        nome_gerente text NOT NULL,
+        telefone text NOT NULL
+    );
+    CREATE TABLE IF NOT EXISTS livros (
+        isbn UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        nome_autor text NOT NULL,
+        assunto text NOT NULL,
+        quantidade_estoque integer NOT NULL,
+        preco numeric NOT NULL CHECK (preco > 0),
+        id_editora uuid NOT NULL REFERENCES editoras
+    );
+    CREATE TABLE IF NOT EXISTS compras (
+        id_cliente uuid NOT NULL REFERENCES clientes,
+        id_livro uuid NOT NULL REFERENCES livros,
+        data date NOT NULL,
+        valor numeric NOT NULL
+    );`);
+    
+        console.log("Tabelas criadas com sucesso!");
+    } catch (error) {
+        console.log(error.message);
+    } finally {
+        db.end();
+    }
+})();
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+3- const db = require("./db");
+const format = require("pg-format");
+
+
+
+ 
+let cliente = {nome:"Anna Júlia",email:"ana@email.com",telefone:"(47) 9 3333-2222",numero_documento:"123.456.789-10",tipo_pessoa:"PF",rua:"Ruazinha",numero:123,cidade:"Indaial",estado:"SC",cep:"1234"};
+ 
+async function insereCliente(cliente){
+    try{
+        let dados_cliente = [[cliente.nome,cliente.email,cliente.telefone,cliente.numero_documento,cliente.tipo_pessoa]];
+        querc = format("INSERT INTO clientes (nome,email,telefone,numero_documento,tipo_pessoa) VALUES %L RETURNING id",dados_cliente);
+        insere = await db.query(querc);
+        let dados_endereco = [[cliente.rua,322,cliente.cidade,cliente.estado,cliente.cep,insere.rows[0].id]];
+        console.log(dados_endereco);
+        quere = format("INSERT INTO enderecos (rua,numero,cidade,estado,cep,id_cliente) VALUES %L RETURNING *",dados_endereco);
+        insere2 = await db.query(quere);
+    } catch (error){
+        console.log(error.message)
+    }
+    finally{
+        db.end();
+    }
+}
+ 
+async function mostraCliente(){
+    try{
+        const {rows} = await db.query('SELECT * FROM enderecos')
+        console.log(rows)
+    }
+    catch (error){
+        console.log(error.message)
+    }
+    finally{
+        db.end();
+    }
+}
+ 
+async function deletarTodos(){
+    try{
+        await db.query('DELETE FROM clientes')
+    }
+    catch (error){
+        console.log(error.message)
+    }
+    finally{
+        db.end();
+    }
+}
+ 
+insereCliente(cliente)
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+5- const db = require("./db");
+const format = require("pg-format");
+ 
+/*Crie uma função insereEditoras(editoras) que recebe um vetor de editoras:
+editora = {
+    nome_gerente,
+    telefone
+}
+e insere essas editoras no banco de dados.
+ 
+Utilize essa função para criar 5 editoras.*/
+ 
+let editoras = [{nome_gerente:"Paulo", telefone:"(47)98888-9999"}, 
+                {nome_gerente:"Juliana Reis", telefone:"(55)70000-0000"},
+                {nome_gerente:"João Pedro", telefone:"(48)56666-6666"}, 
+                {nome_gerente:"Mariah", telefone:"(47)92288-0000"}, 
+                {nome_gerente:"Antônia", telefone:"(00)10101-0101"}];
+ 
+async function insereEditoras(editoras){
+    try{
+        let dados = []
+        for (let i of editoras){
+            let_nova_lista = [i.nome_gerente,i.telefone]
+            dados.push(let_nova_lista)
+        }
+        insereEditora = format("INSERT INTO editoras (nome_gerente,telefone) VALUES %L RETURNING id",dados);
+        ins = await db.query(insereEditora);
+        console.log(ins.rows[0].id)
+ 
+    } catch (error){
+        console.log(error.message)
+    }
+    finally{
+        db.end();
+    }
+}
+ 
+insereEditoras(editoras)
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+6-

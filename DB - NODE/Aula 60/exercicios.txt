@@ -28,10 +28,32 @@ E insere esse objeto como um registro no banco de dados.
 
 Utilize essa função para criar 1 cliente.
 
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
 4) Crie uma função insereClientes(clientes) que recebe um vetor de clientes
 e insere esses clientes no banco de dados.
 
 Utilize essa função para criar 4 clientes.
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
 
 5) Crie uma função insereEditoras(editoras) que recebe um vetor de editoras:
 editora = {

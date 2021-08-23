@@ -1,0 +1,26 @@
+{
+  "name": "entra21-alaniscibele",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cowsay": "^1.5.0",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alaniscibele/entra21-alaniscibele.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alaniscibele/entra21-alaniscibele/issues"
+  },
+  "homepage": "https://github.com/alaniscibele/entra21-alaniscibele#readme"
+}

@@ -72,7 +72,7 @@ res.status(400).json({ message: "E-mail or Password Incorrect! "});
 
 
 // Emitindo o access-token
-const token = jwt.sign({ sub: user.id }, process.env.TOKEN_SECRET, {
+const token = jwt.sign({ sub: user.id, role: user.role}, process.env.TOKEN_SECRET, {
 expiresIn: "20s"
 });
 
@@ -118,7 +118,8 @@ email
 },
 defaults: {
 name,
-password
+password,
+role: "users"
 }
 })
 

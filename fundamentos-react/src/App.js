@@ -37,6 +37,12 @@ function App() {
           <hr/>
           <Notificacao mensagens={["Oi", "Tchau"]}/>
         </Card>
+        <Card titulo="Manipulando Eventos">
+          <ManipulandoEventos />
+        </Card>
+        <Card titulo="State">
+          <Relogio/>
+        </Card>
       </div>
     </div>
   );

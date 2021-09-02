@@ -1,44 +1,44 @@
-:root{
-  --X-color: #DAC15D;
-  --O-color: #DAA75D;
+:root {
+  --X-color: #dac15d;
+  --O-color: #daa75d;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   display: grid;
   align-items: center;
   justify-content: center;
 
-  font-family: 'Monaco, \'Courier New\', monospace';
+  font-family: "Monaco, 'Courier New', monospace";
   height: 100vh;
   background-color: rgb(252, 248, 212);
 }
 
-.title{
+.title {
   text-align: center;
   font-size: 3rem;
   color: black;
   margin-bottom: 2rem;
 }
 
-.board{
+.board {
   display: grid;
   grid-template-columns: repeat(3, 240px);
   grid-template-rows: repeat(3, 240px);
   gap: 1rem;
 }
 
-.cell{
+.cell {
   display: grid;
   align-items: center;
   justify-content: center;
 
-  background-color: #ECE397;
+  background-color: #ece397;
   border-radius: 5px;
   font-size: 3rem;
   font-weight: bold;
@@ -48,17 +48,19 @@ body{
 }
 
 .cell:not(.O):not(.X):hover {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0, 10px, 10px, -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0, 10px, 10px,
+    -5px rgba(0, 0, 0, 0.04);
 }
 
-.cell.O, .cell.X{
-cursor: not-allowed;
+.cell.O,
+.cell.X {
+  cursor: not-allowed;
 }
 
-.cell.O{
+.cell.O {
   background-color: var(--O-color);
 }
 
-.cell.X{
+.cell.X {
   background-color: var(--X-color);
 }

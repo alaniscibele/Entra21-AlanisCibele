@@ -24,6 +24,7 @@ function TicTacToe() {
   //   "O", "X", "X",
   //   "O", "X", "X"
   // ];
+
   const [currentPlayer, setCurrentPlayer] = useState("O");
 
   const checkWinner = () => {
@@ -46,9 +47,7 @@ function TicTacToe() {
     });
   };
 
-
-    useEffect(checkWinner);
-  
+  useEffect(checkWinner);
 
   const [board, setBoard] = useState(emptyBoard);
   return (
